@@ -1,0 +1,184 @@
+/* Spot palette for Kinaxis Red from mycolor.space */
+body {
+  background-color: #fff0ec;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+}
+
+#sidebar {
+  height: 100%;
+}
+
+.bg-primary {
+  background-color: #D01C2D !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #D28B83;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: rgba(0, 0, 0, 0.65);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #D01C2D;
+  border-color: #D01C2D;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+  filter: invert(0.75);
+}
+
+.btn-toggle[aria-expanded=true] {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.btn-toggle[aria-expanded=true]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus,
+.btn-toggle-nav a.active {
+  background-color: #D28B83;
+}
+
+.btn-toggle-nav a.active {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.lh-tight {
+  line-height: 1.25;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 0.75rem;
+}
+
+.form-floating input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.code-input .input-group-text {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+#config-preview {
+  position: fixed;
+  right: 0;
+  width: 40%;
+}
+
+#config-preview-code {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+#config-form label {
+  font-weight: bold;
+}
+
+#upload-file-form progress {
+  width: 100%;
+}
+
+table {
+  background: white;
+}
+
+table td.highlight-green, table .th.highlight-green {
+  background-color: #E3FCEF;
+}
+
+table td.highlight-yellow, table .th.highhlight-yellow {
+  background-color: #FFFAE6;
+}
+
+thead tr:nth-child(1) th {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table-structure-table {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+#validation .validation-table {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+/*# sourceMappingURL=style.css.map */
