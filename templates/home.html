@@ -7,7 +7,7 @@
     <!-- This adds some styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
 
     <!-- This changes the browser icon to the kinaxis logo -->
     <link rel="icon" href="https://www.kinaxis.com/themes/custom/kinaxis/favicon.ico" type="image/vnd.microsoft.icon">
@@ -17,35 +17,24 @@
 
     <!-- Kinaxis logo -->
     <div class="text-center">
-        <img src="../static/img/kinaxis_logo.png" alt="Kinaxis Logo"/>
+        <img src="../static/img/kinaxis_logo.png" alt="Kinaxis Logo" style="float: center; padding:100px 50px 70px"/>
     </div>
-
-    <div>
-    </div>
-
 
     <h3 style="text-align:center;">Welcome to the Demo tool for DemandSensing!</h3>
 
     <div class="row">
         <div class="col">
-            <p>
-                In lieu of creating the table directly inside Databricks, you can upload a CSV file directly below.
-                This will simply upload it to Databricks on your behalf.
-            </p>
-            <p>
+            <br>
+            <p style="text-align:center;">
                 The CSV should have a header, be comma-delimited, and use double quotes for escapes.
             </p>
         </div>
     </div>
 
-
-
     <!-- Form to upload a file -->
     <div class="row">
         <div class="col">
             <form method="POST" action='/upload' enctype="multipart/form-data">
-
-
                 <div class="row">
                     <div class="col-9">
                         <input class="form-control form-control-lg" id="form-file" type="file" name="file">
@@ -54,17 +43,14 @@
                         <button id="upload" type="submit" value="file">Upload</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
 
     <!-- Download a file  -->
     <div></div>
-
-        <form method="POST" enctype="multipart/form-data" action="/upload">
-        <input type="file"  name="file">
-        <input type="submit" value="file">
+        <form method="GET" action="/download">
+        <button id="download" type="submit">Download</button>
     </form>
 
 
