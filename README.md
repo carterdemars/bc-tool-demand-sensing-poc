@@ -11,3 +11,8 @@ You can run the tool with the command
 ```
 flask run
 ```
+
+
+TODO
+- [ ] change buttons to be responsive (i.e. darken with hover and change colour when clicked)
+- [ ] start looking into integration tests?
