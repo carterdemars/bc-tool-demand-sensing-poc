@@ -59,9 +59,9 @@ def download():
 
 @app.route('/download/<file>', methods=['GET'])
 def download_file(file):
-    return send_file(app.config['UPLOAD_FOLDER'] + file, download_name='fake_forecast.csv')
+    return send_file(app.config['UPLOAD_FOLDER'] + file)
 
 
 if __name__ == '__main__':
-    # app.secret_key = 'super secret key'
+    app.secret_key = 'super secret key'
     app.run(host='0.0.0.0', port=5002)

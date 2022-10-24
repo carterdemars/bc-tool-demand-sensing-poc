@@ -1,4 +1,41 @@
 /* Spot palette for Kinaxis Red from mycolor.space */
+
+body {
+    background-color: #fff0ec;
+
+}
+
+.block {
+    width:50%;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+.button {
+    margin:10px;
+}
+
+.container {
+    width:70%;
+    padding:10px;
+    padding-top:35px;
+    margin: auto;
+    box-sizing:border-box;
+}
+
+#download-button {
+}
+
+#upload-button {
+}
+
+#upload-form {
+    /*width:70%;*/
+    margin:auto;
+}
+
+
+/*
 body {
   background-color: #fff0ec;
 }
@@ -181,4 +218,7 @@ thead tr:nth-child(1) th {
   overflow-x: scroll;
 }
 
+*/
 /*# sourceMappingURL=style.css.map */
+
+
