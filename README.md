@@ -15,6 +15,7 @@ flask run
 
 TODO
 - [ ] change buttons to be responsive (i.e. darken with hover and change colour when clicked)
+- [ ] add a message when a file is uploaded (i.e. {filename} was uploaded.)
 - [ ] start looking into integration tests?
 - [ ] set up to run in a docker container
 - [ ] create page for viewing uploaded data?
