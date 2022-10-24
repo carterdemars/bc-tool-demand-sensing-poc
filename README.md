@@ -18,3 +18,4 @@ TODO
 - [ ] start looking into integration tests?
 - [ ] set up to run in a docker container
 - [ ] create page for viewing uploaded data?
+- [ ] consider some sort of progress bar
