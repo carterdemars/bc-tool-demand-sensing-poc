@@ -12,6 +12,7 @@ app = Flask(__name__)
 # app.config['DEBUG'] = True # enables debugging mode for development
 app.config['UPLOAD_FOLDER'] = 'data/'
 
+
 @app.route('/')
 def home():
     return render_template('home.html')
@@ -43,14 +44,24 @@ def upload_file():
     filename = secure_filename(file.filename)
     data.to_csv(app.config['UPLOAD_FOLDER'] + filename)
 
-    return redirect(url_for('download_file', file=filename))
+    return redirect(url_for('home'))
+
+
+@app.route('/download')
+def download():
+
+    # check if the data folder is empty
+    if not os.listdir(app.config['UPLOAD_FOLDER']):
+        return redirect(url_for('home'))
+
+    return redirect(url_for('download_file', file=os.listdir(app.config['UPLOAD_FOLDER'])[0]))
 
 
 @app.route('/download/<file>', methods=['GET'])
 def download_file(file):
-    return send_file(app.config["UPLOAD_FOLDER"] + file, download_name='fake_forecast.csv')
+    return send_file(app.config['UPLOAD_FOLDER'] + file)
 
 
 if __name__ == '__main__':
-    # app.secret_key = 'super secret key'
+    app.secret_key = 'super secret key'
     app.run(host='0.0.0.0', port=5002)
