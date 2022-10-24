@@ -19,3 +19,4 @@ TODO
 - [ ] set up to run in a docker container
 - [ ] create page for viewing uploaded data?
 - [ ] consider some sort of progress bar
+- [ ] See https://getbootstrap.com/docs/4.0/components/forms/ for adding more forms
